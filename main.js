@@ -49,3 +49,14 @@ printToDom('dog-breeds', dogBreed('lab'));
 printToDom('nuggetizer', nuggetizer('bear'));
 printToDom('nuggetizer', nuggetizer('kitten'));
 printToDom('nuggetizer', 'mmmmm');
+
+let bandNumber = 1;
+
+const addBand = (bandName) => {
+    const bandText = `<h5>${bandNumber}. ${bandName}</h5>`;
+    bandNumber = bandNumber + 1;
+    printToDom('band-list', bandText);
+}
+
+addBand('Metallica'); //1. Metallica
+addBand('Slayer'); //2. Slayer
