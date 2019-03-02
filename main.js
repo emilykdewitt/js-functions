@@ -32,3 +32,20 @@ const dogBreed = (breedName) => {
 };
 
 dogBreed('border collie');
+
+//const dogBreedDiv = document.getElementById('dog-breeds');
+//console.log('dogBreedDiv', dogBreedDiv);
+//dogBreedDiv.innerHTML = dogBreed('lab');
+
+//const nuggetizerDiv = document.getElementById('nuggetizer');
+//nuggetizerDiv.innerHTML = nuggetizer('bear');
+
+const printToDom = (divId, textToPrint) => {
+    const selectedDiv = document.getElementById(divId);
+    selectedDiv.innerHTML += textToPrint;
+}
+
+printToDom('dog-breeds', dogBreed('lab'));
+printToDom('nuggetizer', nuggetizer('bear'));
+printToDom('nuggetizer', nuggetizer('kitten'));
+printToDom('nuggetizer', 'mmmmm');
