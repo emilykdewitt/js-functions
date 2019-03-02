@@ -27,3 +27,8 @@ console.log(nuggetizer('cow'));
 console.log(nuggetizer('chicken'));
 console.log(nuggetizer('student'));
 
+const dogBreed = (breedName) => {
+    console.log(`My favorite dog breed is ${breedName}`)
+}
+
+dogBreed('border collie');
