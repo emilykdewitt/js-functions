@@ -17,3 +17,13 @@ const namePrinter = (firstName, lastName) => {
 namePrinter('Emily', 'DeWitt');
 namePrinter('John', 'Doe');
 namePrinter('Sally', 'Smith');
+
+const nuggetizer = (animal) => {
+    return `processed ${animal}`;
+};
+
+console.log(nuggetizer('pig'));
+console.log(nuggetizer('cow'));
+console.log(nuggetizer('chicken'));
+console.log(nuggetizer('student'));
+
